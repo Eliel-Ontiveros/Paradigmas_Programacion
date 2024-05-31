@@ -1,0 +1,41 @@
+sudo: true
+language: haskell
+
+cache:
+  directories:
+  - "$HOME/.stack"
+  - "$TRAVIS_BUILD_DIR/.stack-work"
+
+matrix:
+  Include:
+  - ghc: 8.6.5
+    env: STACK_YAML="$TRAVIS_BUILD_DIR/stack.yaml"
+
+before_install:
+  - sudo apt-get -y install smlnj expect libcml-smlnj libcmlutil-smlnj libsmlnj-smlnj
+
+install:
+  - curl -sSL https://get.haskellstack.org/ | sh
+  - stack --version
+  - stack build --system-ghc --test --bench --no-run-tests --no-run-benchmarks
+
+script:
+  - ./bin/test-examples.sh
+  - stack build
+  - stack exec site build
+
+# Note: As of 17 Nov 19, Travis CI's 'build config validation' (beta)
+# breaks this deployment.
+# https://travis-ci.community/t/github-pages-deployment-fails-with-missing-github-token/5955/3
+# TODO: Reinvestigate if fixed.
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
+  keep_history: false
+  on:
+    branch: master
+  local_dir: _site
+
+  repo: Saityi/sml-tour
+  target_branch: master
