@@ -1,3 +1,8 @@
+# Universidad Autonoma de Baja California
+
+### Eliel Alfonso Ontiveros Ojeda
+### 368746 
+
 # Introducción
 En la materia de Paradigmas de la Programación, se destaca la importancia de escribir código claro, modular y reutilizable. La modularización no solo facilita la comprensión y el mantenimiento del código, sino que también mejora su escalabilidad y depuración. En este reporte, presentamos la implementación de un sistema bancario en Python, dividido en tres módulos principales: CuentaBancaria, SistemaBancario, y un archivo principal main que actúa como interfaz de usuario. Este enfoque modular permite una mejor organización y manejo del proyecto, ejemplificando principios clave de la programación orientada a objetos.
 
