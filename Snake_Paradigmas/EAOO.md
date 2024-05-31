@@ -2,7 +2,7 @@
 Este reporte describe el desarrollo de un juego de la serpiente utilizando la librería gráfica Raylib en C. Este proyecto fue realizado como parte de la materia de Paradigmas de la Programación, con el objetivo de aplicar conceptos fundamentales de programación en C, manejo de gráficos, y gestión de archivos. El juego de la serpiente es un clásico que ofrece un entorno perfecto para practicar la manipulación de matrices, la gestión de eventos y la implementación de una interfaz gráfica básica.
 
 # Desarrollo
-##Estructura del Proyecto
+## Estructura del Proyecto
 El proyecto está dividido en varias secciones clave:
 
 - Definición de constantes y variables globales.
