@@ -14,9 +14,9 @@ El proyecto está dividido en varias secciones clave:
 ## Constantes y Variables Globales
 Se definieron varias constantes para manejar el tamaño de los elementos en el juego y las dimensiones del tablero:
 
-#define TAMANO_CUADRO 64
-#define FILAS 15
-#define COLUMNAS 10
+    #define TAMANO_CUADRO 64
+    #define FILAS 15
+    #define COLUMNAS 10
 
 Además, se definieron variables globales para gestionar el estado del juego, la posición de la comida y la serpiente, la dirección de la serpiente, entre otros.
 
@@ -32,19 +32,19 @@ Estas funciones permiten que el juego mantenga un registro de las mejores puntua
 ## Inicialización de Recursos
 En la función main(), se inicializan los recursos gráficos y de audio:
 
-InitWindow(FILAS * TAMANO_CUADRO, COLUMNAS * TAMANO_CUADRO, "Serpiente");
-InitAudioDevice();
-SetTargetFPS(60);
+    InitWindow(FILAS * TAMANO_CUADRO, COLUMNAS * TAMANO_CUADRO, "Serpiente");
+    InitAudioDevice();
+    SetTargetFPS(60);
 
 Se cargan las texturas y sonidos necesarios para el juego:
 
-Texture2D backgroundImage = LoadTexture("path_to_menu_image");
-Texture2D loseImage = LoadTexture("path_to_lose_image");
-Texture2D snakeUp = LoadTexture("path_to_snake_up_image");
-...
-Music music = LoadMusicStream("path_to_background_music");
-Sound eatSound = LoadSound("path_to_eat_sound");
-Sound losingSound = LoadSound("path_to_lose_sound");
+    Texture2D backgroundImage = LoadTexture("path_to_menu_image");
+    Texture2D loseImage = LoadTexture("path_to_lose_image");
+    Texture2D snakeUp = LoadTexture("path_to_snake_up_image");
+    ...
+    Music music = LoadMusicStream("path_to_background_music");
+    Sound eatSound = LoadSound("path_to_eat_sound");
+    Sound losingSound = LoadSound("path_to_lose_sound");
 
 ## Bucle Principal del Juego
 El bucle principal maneja los diferentes estados del juego usando una variable currentScreen:
@@ -80,15 +80,26 @@ En el estado del juego (GAME), se actualiza la posición de la serpiente, se com
 ## Liberación de Recursos
 Al finalizar el juego, se liberan los recursos gráficos y de audio:
 
-UnloadMusicStream(music);
-UnloadSound(eatSound);
-CloseAudioDevice();
-UnloadTexture(backgroundImage);
-UnloadTexture(loseImage);
-...
-CloseWindow();
+    UnloadMusicStream(music);
+    UnloadSound(eatSound);
+    CloseAudioDevice();
+    UnloadTexture(backgroundImage);
+    UnloadTexture(loseImage);
+    ...
+    CloseWindow();
 
-## Conclusión
+## Pantallas
+A continuación se muestran pantallas del juego en reproducción:
+
+![Imagen de unas nubes](Menu_Screen.png)
+
+![Imagen de unas nubes](Game_Screen.png)
+
+![Imagen de unas nubes](Lose_Screen.png)
+
+![Imagen de unas nubes](Ranking_Screen.png)
+
+# Conclusión
 El desarrollo de este juego de la serpiente en C utilizando Raylib ha permitido aplicar y reforzar conocimientos de programación, manejo de gráficos y audio, así como gestión de archivos. La implementación de diferentes estados del juego y un sistema de ranking proporcionan una experiencia de usuario completa y satisfactoria. Este proyecto no solo sirve como una excelente práctica de programación, sino también como una base sobre la cual se pueden añadir funcionalidades y complejidades adicionales en el futuro.
 
 
