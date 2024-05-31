@@ -69,8 +69,51 @@ En este ejemplo, aplicar_dos_veces toma una función f y un valor x, y aplica f 
 
 En la carpeta examples hay contenidas una gran cantidad de ejemplos de programas de SML. A continuación se motrara algunos de los programas contenidos:
 
+## recursion.sml
+    fun sum []        = 0
+    | sum (x :: xs) = x + sum xs
+
+    fun sum_iter xs =
+    let fun sum_iter' [] acc        = acc
+            | sum_iter' (x :: xs) acc = sum_iter' xs (x + acc)
+    in sum_iter' xs 0
+    end
+
+    val s = sum [1, 2, 3]
+    val s' = sum_iter [1, 2, 3]
+
 ![Imagen de unas nubes](recursion.png)
 
+## recursive_datatypes.sml
+    infixr 4 +:
+    datatype 'a list = eol
+                    | +: of 'a * 'a list
+
+    datatype 'a tree = leaf
+                    | node of { value : 'a
+                            , left  : 'a tree
+                            , right : 'a tree
+                            }
+
+    val ints = 1 +: 2 +: 3 +: eol
+    val inttree = node { value = 1
+                    , left  = node { value = 2
+                                    , left = leaf
+                                    , right = leaf
+                                    }
+                    , right = node { value = 3
+                                    , left = leaf
+                                    , right = leaf
+                                    }
+                    }
+
+![Imagen de unas nubes](recursive_datatypes.png)
+
+## setup.sml
+    val u = print "Hello, world!\n"
+
+
+![Imagen de unas nubes](setup.png)
 
 # Conclusión
 
