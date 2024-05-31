@@ -3,10 +3,10 @@
 ### Eliel Alfonso Ontiveros Ojeda
 ### 368746 
 
-**Introducción**
+# Introducción
 Markdown es un lenguaje de marcado ligero y fácil de usar que se utiliza para formatear texto de manera sencilla y legible. Es ampliamente utilizado en la documentación de proyectos, especialmente en plataformas de desarrollo colaborativo como GitHub. GitHub es un servicio de alojamiento de repositorios que permite a los desarrolladores almacenar y gestionar su código. GitBash es una interfaz de línea de comandos que permite a los usuarios de Windows utilizar comandos de Git en un entorno similar a Unix. En esta práctica, aprenderás a crear un archivo en Markdown, subirlo a un repositorio de GitHub utilizando GitBash y gestionar tus archivos de manera eficiente.
 
-**Desarrollo**
+# Desarrollo
 Subir Archivos a GitHub Utilizando GitBash
 
 1. **Instalación de Git y GitBash**: Asegúrate de tener Git y GitBash instalados en tu sistema. Puedes descargarlo desde [aquí](https://git-scm.com/).
@@ -45,5 +45,5 @@ Subir Archivos a GitHub Utilizando GitBash
     git push -u origin master
     ```
 
-**Conclusión**
+# Conclusión
 En esta práctica, has aprendido a utilizar Markdown para crear y formatear documentos de texto de manera sencilla y efectiva. Además, has aprendido a utilizar GitBash para inicializar un repositorio local, añadir archivos, hacer commits y subir tu trabajo a un repositorio en GitHub. Estas habilidades son fundamentales para cualquier desarrollador que trabaje en proyectos colaborativos y quiera mantener un flujo de trabajo organizado y eficiente. Ahora puedes documentar tus proyectos y compartirlos con la comunidad de desarrolladores en GitHub.    
