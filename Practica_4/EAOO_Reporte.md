@@ -1,3 +1,8 @@
+# Universidad Autonoma de Baja California
+
+### Eliel Alfonso Ontiveros Ojeda
+### 368746 
+
 # Introducción
 Prolog es un lenguaje de programación lógico, utilizado principalmente en el ámbito de la inteligencia artificial y la computación simbólica. Su nombre proviene de "Programming in Logic" y se caracteriza por un enfoque declarativo, donde se especifica qué se quiere lograr en lugar de cómo lograrlo. En este reporte, se explorará el funcionamiento de Prolog, ilustrando su sintaxis y lógica mediante ejemplos prácticos, y se presentará una conclusión sobre sus aplicaciones y beneficios en la programación.
 

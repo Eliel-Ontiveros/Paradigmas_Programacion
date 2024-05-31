@@ -1,3 +1,8 @@
+# Universidad Autonoma de Baja California
+
+### Eliel Alfonso Ontiveros Ojeda
+### 368746 
+
 # Introducción
 
 En el curso de Paradigmas de la Programación, hemos explorado diferentes lenguajes y enfoques para resolver problemas computacionales. Uno de estos lenguajes es Standard ML (SML), un lenguaje funcional que enfatiza la inmutabilidad, la expresión matemática y el uso de funciones como elementos primarios. En este reporte, presentaremos una visión general de SML, su funcionamiento y la lógica detrás de su diseño. También discutiremos algunos ejemplos prácticos para ilustrar su uso y finalizaremos con una conclusión que resuma nuestra experiencia y aprendizajes con este lenguaje.
