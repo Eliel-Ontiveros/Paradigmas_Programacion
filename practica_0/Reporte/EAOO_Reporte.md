@@ -1,3 +1,8 @@
+# Universidad Autonoma de Baja California
+
+### Eliel Alfonso Ontiveros Ojeda
+### 368746 
+
 **Introducción**
 Markdown es un lenguaje de marcado ligero y fácil de usar que se utiliza para formatear texto de manera sencilla y legible. Es ampliamente utilizado en la documentación de proyectos, especialmente en plataformas de desarrollo colaborativo como GitHub. GitHub es un servicio de alojamiento de repositorios que permite a los desarrolladores almacenar y gestionar su código. GitBash es una interfaz de línea de comandos que permite a los usuarios de Windows utilizar comandos de Git en un entorno similar a Unix. En esta práctica, aprenderás a crear un archivo en Markdown, subirlo a un repositorio de GitHub utilizando GitBash y gestionar tus archivos de manera eficiente.
 
