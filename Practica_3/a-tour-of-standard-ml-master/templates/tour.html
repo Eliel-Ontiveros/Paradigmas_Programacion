@@ -1,0 +1,9 @@
+<div class="body">
+      <h2>$index$.$section$: $title$</h2>
+      $body$
+</div>
+$if(examplef)$<div><h3><pre>(* $examplef$ *)</pre></h3>
+<textarea id="codebox" cols="80" rows="24">$if(code)$$code$$endif$</textarea>
+<input type="submit" value="Run" onclick="runCode();">
+<div><pre id="coderan"></pre></div></div>
+$endif$
