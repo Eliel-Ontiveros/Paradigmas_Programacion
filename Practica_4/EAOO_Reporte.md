@@ -8,61 +8,61 @@ Prolog se basa en la lógica de predicados de primer orden, donde el conocimient
 
 **Hechos**: Declaran relaciones entre objetos o propiedades de objetos.
 
-madre(maria, ana).
-padre(jose, ana).
+    madre(maria, ana).
+    padre(jose, ana).
 
 **Reglas**: Definen relaciones lógicas basadas en hechos.
 
-progenitor(X, Y) :- madre(X, Y).
-progenitor(X, Y) :- padre(X, Y).
+    progenitor(X, Y) :- madre(X, Y).
+    progenitor(X, Y) :- padre(X, Y).
 
 **Consultas**: Permiten interrogar la base de conocimientos.
 
-?- progenitor(maria, ana).
+    ?- progenitor(maria, ana).
 
 ## Ejemplo 1: Árbol Genealógico
 Definamos una base de conocimientos simple para un árbol genealógico.
 
-% Hechos
-madre(maria, ana).
-madre(ana, juan).
-padre(jose, ana).
-padre(carlos, juan).
+    % Hechos
+    madre(maria, ana).
+    madre(ana, juan).
+    padre(jose, ana).
+    padre(carlos, juan).
 
-% Reglas
-abuelo(X, Y) :- padre(X, Z), progenitor(Z, Y).
-abuela(X, Y) :- madre(X, Z), progenitor(Z, Y).
-progenitor(X, Y) :- madre(X, Y).
-progenitor(X, Y) :- padre(X, Y).
+    % Reglas
+    abuelo(X, Y) :- padre(X, Z), progenitor(Z, Y).
+    abuela(X, Y) :- madre(X, Z), progenitor(Z, Y).
+    progenitor(X, Y) :- madre(X, Y).
+    progenitor(X, Y) :- padre(X, Y).
 
-% Consultas
-?- abuelo(jose, juan).
-% Respuesta: No
-?- abuelo(carlos, juan).
-% Respuesta: Sí
+    % Consultas
+    ?- abuelo(jose, juan).
+    % Respuesta: No
+    ?- abuelo(carlos, juan).
+    % Respuesta: Sí
 
 En este ejemplo, se definen hechos para madres y padres, y se introducen reglas para determinar si alguien es abuelo o abuela de otra persona. Luego se pueden realizar consultas para obtener información.
 
 ## Ejemplo 2: Relaciones Familiares
 Para ilustrar la flexibilidad de Prolog, consideremos las siguientes reglas para definir hermanos y tíos.
 
-% Hechos adicionales
-madre(sofia, pedro).
-padre(juan, pedro).
+    % Hechos adicionales
+    madre(sofia, pedro).
+    padre(juan, pedro).
 
-% Reglas adicionales
-hermano(X, Y) :- progenitor(Z, X), progenitor(Z, Y), X \= Y.
-tio(X, Y) :- hermano(X, Z), progenitor(Z, Y).
+    % Reglas adicionales
+    hermano(X, Y) :- progenitor(Z, X), progenitor(Z, Y), X \= Y.
+    tio(X, Y) :- hermano(X, Z), progenitor(Z, Y).
 
-% Consultas
-?- hermano(juan, ana).
-% Respuesta: No
-?- hermano(ana, juan).
-% Respuesta: No
-?- tio(ana, pedro).
-% Respuesta: No
-?- tio(juan, pedro).
-% Respuesta: Sí
+    % Consultas
+    ?- hermano(juan, ana).
+    % Respuesta: No
+    ?- hermano(ana, juan).
+    % Respuesta: No
+    ?- tio(ana, pedro).
+    % Respuesta: No
+    ?- tio(juan, pedro).
+    % Respuesta: Sí
 
 Aquí, se extienden las reglas para identificar relaciones más complejas como hermanos y tíos, demostrando la capacidad de Prolog para manejar estructuras de datos relacionadas.
 
