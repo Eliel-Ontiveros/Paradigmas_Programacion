@@ -66,7 +66,7 @@ Para ilustrar la flexibilidad de Prolog, consideremos las siguientes reglas para
 
 Aquí, se extienden las reglas para identificar relaciones más complejas como hermanos y tíos, demostrando la capacidad de Prolog para manejar estructuras de datos relacionadas.
 
-## Ejemplo 4: Listas y Recursión
+## Ejemplo 3: Listas y Recursión
 Prolog maneja listas y permite realizar operaciones recursivas sobre ellas. A continuación, un ejemplo de cómo calcular la longitud de una lista.
 
     % Regla para calcular la longitud de una lista
@@ -81,7 +81,7 @@ Prolog maneja listas y permite realizar operaciones recursivas sobre ellas. A co
 
 En este ejemplo, se utiliza la recursión para calcular la longitud de una lista. La regla base establece que la longitud de una lista vacía es 0, y la regla recursiva suma 1 por cada elemento en la lista.
 
-## Ejemplo 5: Búsqueda en un Grafo
+## Ejemplo 4: Búsqueda en un Grafo
 Prolog también puede usarse para buscar caminos en un grafo. A continuación, un ejemplo de cómo encontrar un camino entre dos nodos en un grafo.
 
     % Hechos que representan las aristas del grafo
